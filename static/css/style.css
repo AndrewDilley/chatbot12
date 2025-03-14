@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 800px; /* Doubled width */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-box {
+    height: 600px; /* Doubled height */
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.title {
+    text-align: center;
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.user-message {
+    text-align: right;
+    color: #1E90FF; /* Dodger blue for better contrast */;
+}
+
+
+.ai-message {
+    text-align: left;
+    color:  #228B22; /* Forest green, more distinguishable */;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+
+.error-message {
+    text-align: center;
+    color:  #FF4500; /* Orange red, distinct from green */
+    ;
+}
+
+
+.reference-label {
+    color: #333; /* Dark gray for label */
+    font-weight: normal;
+}
+
+.reference-text {
+    color: #333; /* Forest green for data */
+}
+
+/* Ensure Content enquiries label and text are styled consistently with reference */
+.content-enquiries-label {
+    color: #333; /* Match reference label color */
+    font-weight: normal;
+}
+
+.content-enquiries-text {
+    color: #333; /* Match reference text color */
+}
+
+
+
+#chat-form {
+    display: flex;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
